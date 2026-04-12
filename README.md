@@ -144,7 +144,7 @@
 ---
 
 PET-Мастер: Мы не просто перерабатываем пластик — мы печатаем будущее своими руками.
-[Репозиторий проекта: https://gradosphera.github.io/pet-master]
+[Репозиторий проекта: https://github.com/gradosphera/pet-master
 
 ---
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="STL и 3MF модели корпуса станка PET-Мастер для 3D-печати." />
+  <title>3D-модели — PET-Мастер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/eco.css" />
+</head>
+
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <h1 class="page-h1">
+      <span class="page-h1__ico" aria-hidden="true">🧩</span>
+      <span>Модели для 3D-печати</span>
+    </h1>
+    <p style="color: var(--ink-muted); max-width: 720px">
+      Файлы <strong>Основание</strong>, <strong>Электроника</strong>,
+      <strong>Вал намотки</strong> (как в репозитории). Лицензия на корпусные модели: <strong>CC BY-NC</strong>.
+    </p>
+
+    <div class="models-story">
+      <h2 class="section__title">
+        <span class="section__title-icon" aria-hidden="true">🔩</span>
+        <span>Сборка напечатанных деталей</span>
+      </h2>
+      <div class="visual-row visual-row--3">
+        <figure class="page-figure">
+          <img data-pet-src="files/img/Процесс сборки станка/Процесс сборки вала станка.webp"
+            alt="Сборка вала станка из напечатанных деталей" width="400" height="280" loading="lazy" decoding="async" />
+          <figcaption>Сборка вала: напечатанные детали + метизы</figcaption>
+        </figure>
+        <figure class="page-figure">
+          <img data-pet-src="files/img/Процесс сборки станка/Волонтер собирает вал.webp"
+            alt="Волонтёр собирает узел вала" width="400" height="280" loading="lazy" decoding="async" />
+          <figcaption>Монтаж вала намотки по инструкции</figcaption>
+        </figure>
+        <figure class="page-figure">
+          <img data-pet-src="files/img/Процесс сборки станка/Волонтер закрепляет корпус.webp"
+            alt="Крепление корпусных деталей" width="400" height="280" loading="lazy" decoding="async" />
+          <figcaption>Сборка и крепление корпуса после печати</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="notice models-archive-notice notice--with-icon">
+      <span class="notice__ico" aria-hidden="true">🗜️</span>
+      <div class="notice__body">
+        <strong>Архив для скачивания:</strong>
+        <a class="btn btn--primary" style="margin-left: 0.5rem; vertical-align: middle" href="#"
+          data-pet-root="models.zip" download>models.zip</a>
+        <span style="margin-left: 0.35rem"></span>
+      </div>
+    </div>
+
+    <div id="stl-root">
+      <p class="loading">Загрузка каталога…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>PET-Мастер</strong> — корпус по возможности распечатайте из переработанного филамента</p>
+      <p><a href="https://github.com/gradosphera/pet-master">Репозиторий на GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/pet-paths.js"></script>
+  <script src="js/site-nav.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/repo-links.js"></script>
+  <script src="js/stl-catalog.js"></script>
+</body>
+
+</html>

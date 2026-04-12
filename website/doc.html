@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title id="doc-title">Документы — PET-Мастер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/eco.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body>
+  <div id="site-nav"></div>
+
+  <main class="doc-page">
+    <div class="doc-page__grid">
+      <div class="doc-page__primary">
+        <p><a href="docs.html">← Все документы</a></p>
+        <h1 id="doc-heading">Загрузка…</h1>
+        <div id="doc-content">
+          <p class="loading">Загрузка документа…</p>
+        </div>
+      </div>
+      <aside class="doc-page__aside" aria-label="Иллюстрация процесса">
+        <figure class="page-figure">
+          <img data-pet-src="files/img/Процесс сборки станка/Общее фото волонтер собирает вал намотки.webp"
+            alt="Волонтёр собирает вал намотки станка" width="300" height="400" loading="lazy" decoding="async" />
+          <figcaption>Сборка вала намотки — один из этапов по документации</figcaption>
+        </figure>
+        <div class="aside-hint">
+          <span class="aside-hint__ico" aria-hidden="true">💡</span>
+          <span>Откройте связанные разделы: <a href="equipment.html">комплектующие</a>, <a
+              href="models.html">модели</a>, <a href="index.html">главная</a>.</span>
+        </div>
+        <figure class="page-figure" style="margin-top: 1rem">
+          <img data-pet-src="files/img/Процесс сборки станка/волонтер заправляет ленту в станок.webp"
+            alt="Заправка ленты из бутылки в станок" width="300" height="360" loading="lazy" decoding="async" />
+          <figcaption>Заправка ленты — технологическая цепочка «бутылка → нить»</figcaption>
+        </figure>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>PET-Мастер</strong></p>
+      <p><a href="https://github.com/gradosphera/pet-master">Репозиторий на GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/pet-paths.js"></script>
+  <script src="js/site-nav.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/repo-links.js"></script>
+  <script src="js/doc-view.js"></script>
+</body>
+
+</html>

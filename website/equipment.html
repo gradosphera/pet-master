@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Полный список оборудования и материалов для сборки станка PET-Мастер." />
+  <title>Комплектующие — PET-Мастер</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/eco.css" />
+</head>
+
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <h1 class="page-h1">
+      <span class="page-h1__ico" aria-hidden="true">📦</span>
+      <span>Оборудование и материалы</span>
+    </h1>
+    <p style="color: var(--ink-muted); max-width: 720px">
+      Ниже — полный перечень для сметы и закупок.
+      Расширенная таблица с категориями, фото компонентов и примечаниями — в
+      <a href="doc.html?md=Список%20комплектующих.md&amp;title=Список%20комплектующих">«Списке комплектующих»</a>
+    </p>
+
+    <div class="visual-row visual-row--2">
+      <figure class="page-figure">
+        <img data-pet-src="files/img/Процесс сборки станка/Процесс установки блока питания в корпус.webp"
+          alt="Установка блока питания в корпус станка" width="640" height="400" loading="lazy" decoding="async" />
+        <figcaption>Монтаж блока питания в корпус — этап после закупки комплектующих</figcaption>
+      </figure>
+      <figure class="page-figure">
+        <img data-pet-src="files/img/Процесс сборки станка/Волонтер подготавливает провода.webp"
+          alt="Подготовка проводов для электромонтажа" width="640" height="400" loading="lazy" decoding="async" />
+        <figcaption>Подготовка проводов к подключению узлов по схеме</figcaption>
+      </figure>
+    </div>
+
+    <div class="notice notice--with-icon">
+      <span class="notice__ico" aria-hidden="true">🔌</span>
+      <div class="notice__body">
+        Инструмент для сборки и электрическая схема:
+        <a href="doc.html?md=Необходимый%20инструмент%20для%20сборки.md&amp;title=Инструмент">необходимый
+          инструмент</a>,
+        <a href="doc.html?md=Схема%20электрическая%20принципиальная.md&amp;title=Схема">принципиальная схема</a>.
+      </div>
+    </div>
+
+    <div class="visual-row visual-row--2">
+      <figure class="page-figure">
+        <img data-pet-src="files/img/Процесс сборки станка/Волонтер проводит пайку.webp"
+          alt="Пайка электрических соединений" width="640" height="400" loading="lazy" decoding="async" />
+        <figcaption>Пайка контактов — аккуратность и ТБ при работе с 12 В и 220 В</figcaption>
+      </figure>
+      <figure class="page-figure">
+        <img data-pet-src="files/img/Процесс сборки станка/Волонтер проводит пайку проводов.webp"
+          alt="Пайка проводов для клемм и колодок" width="640" height="400" loading="lazy" decoding="async" />
+        <figcaption>Монтаж проводов под винтовые клеммы и колодки</figcaption>
+      </figure>
+    </div>
+
+    <div class="table-wrap" style="margin-top: 1.5rem">
+      <table class="data-table" id="csv-table">
+        <thead>
+          <tr>
+            <th>Наименование</th>
+            <th>Количество</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2">Загрузка…</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top: 1.5rem">
+      <a class="btn btn--primary" href="#" data-pet-root="List_hardware_PET_Master.csv" download>Скачать CSV</a>
+      <a class="btn btn--ghost" href="doc.html?md=Спецификация%20комплектующих.md&amp;title=Спецификация">Спецификация
+        (BOM)</a>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>PET-Мастер</strong> — документация для образовательных и экологических инициатив.</p>
+      <p><a href="https://github.com/gradosphera/pet-master">Репозиторий на GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="js/pet-paths.js"></script>
+  <script src="js/site-nav.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/repo-links.js"></script>
+  <script src="js/equipment.js"></script>
+</body>
+
+</html>

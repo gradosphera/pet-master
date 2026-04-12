@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="PET-Мастер — образовательный проект: переработка PET-бутылок в нить для 3D-печати. Документация, комплектующие, модели." />
+  <title>PET-Мастер — документация проекта</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/eco.css" />
+</head>
+
+<body>
+  <div id="site-nav"></div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__text">
+        <h1 id="hero-title">От бутылки до катушки</h1>
+        <p class="hero__lead">
+          Образовательно-экологический проект <strong>PET-Мастер</strong>: настольный пултрузионный станок для
+          переработки использованных PET-бутылок в филамент для 3D-принтера. Открытые инструкции, 3D-модели и
+          материалы для мастер-классов и экологических инициатив.
+        </p>
+        <p class="hero__about">
+          Проект сочетает локальную переработку пластика с обучением инженерному мышлению: схемотехника, нагрев и
+          контроль температуры, аддитивные технологии и замкнутый цикл материалов. Документация и исходные тексты
+          распространяются свободно; модели корпуса — под лицензией CC BY-NC. Исходники и обсуждение —
+          <a href="https://github.com/gradosphera/pet-master">github.com/gradosphera/pet-master</a>.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="equipment.html">Список комплектующих</a>
+          <a class="btn btn--ghost" href="models.html">Файлы для печати</a>
+          <a class="btn btn--ghost" href="docs.html">Все документы</a>
+          <a class="btn btn--ghost" href="https://github.com/gradosphera/pet-master" target="_blank"
+            rel="noopener noreferrer">Репозиторий</a>
+        </div>
+        <ul class="intro-badges" aria-label="Ключевые темы проекта">
+          <li><span class="ib-ico" aria-hidden="true">♻</span> Вторичное сырьё</li>
+          <li><span class="ib-ico" aria-hidden="true">🎓</span> Мастер-классы</li>
+          <li><span class="ib-ico" aria-hidden="true">🔧</span> Сборка станка</li>
+          <li><span class="ib-ico" aria-hidden="true">🖨️</span> 3D-печать</li>
+        </ul>
+      </div>
+      <div class="hero__visual">
+        <figure class="page-figure page-figure--hero hero__shot hero__shot--primary">
+          <img data-pet-src="files/img/Процесс сборки станка/Фото работы трех станков для заставки.webp"
+            alt="Три настольных станка PET-Мастер в работе" width="720" height="405" loading="eager" decoding="async" />
+          <figcaption>Станки в работе: переработка PET в филамент</figcaption>
+        </figure>
+        <figure class="page-figure page-figure--hero hero__shot hero__shot--secondary">
+          <img data-pet-src="files/img/Процесс сборки станка/Мастер-класс по переработке на станках.webp"
+            alt="Участники мастер-класса у станков переработки" width="720" height="450" loading="lazy"
+            decoding="async" />
+          <figcaption>Мастер-класс: обучение работе со станком</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="mission-title">
+      <h2 class="section__title" id="mission-title">
+        <span class="section__title-icon" aria-hidden="true">🌿</span>
+        <span>Экологическая миссия</span>
+      </h2>
+      <div class="visual-split">
+        <figure class="page-figure">
+          <img data-pet-src="files/img/Процесс сборки станка/крупное фото намотки филамента.webp"
+            alt="Намотка готового филамента на катушку" width="640" height="400" loading="lazy" decoding="async" />
+          <figcaption>Готовая нить на катушке — результат переработки бутылки</figcaption>
+        </figure>
+        <div class="visual-split__text">
+          <p style="margin: 0; color: var(--ink-muted); line-height: 1.65">
+            Локальная переработка пластика и наглядное обучение принципам замкнутого цикла: меньше отходов,
+            больше понимания материалов и инженерии. Станок собирают волонтёры и школьники под руководством наставников
+            — от монтажа корпуса до
+            первой намотки нити.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="blocks-title">
+      <h2 class="section__title" id="blocks-title">
+        <span class="section__title-icon" aria-hidden="true">📚</span>
+        <span>Разделы сайта</span>
+      </h2>
+      <div class="cards">
+        <article class="card">
+          <div class="card__head">
+            <span class="card__ico" aria-hidden="true">📦</span>
+            <h3>Комплектующие и материалы</h3>
+          </div>
+          <p>Полный перечень для закупки и сборки станка, таблица из CSV и расширенный список с иллюстрациями.</p>
+          <p><a href="equipment.html">Перейти →</a></p>
+        </article>
+        <article class="card">
+          <div class="card__head">
+            <span class="card__ico" aria-hidden="true">🧩</span>
+            <h3>3D-печать (STL)</h3>
+          </div>
+          <p>Детали по группам: основание, электроника, вал намотки.</p>
+          <p><a href="models.html">Перейти →</a></p>
+        </article>
+        <article class="card">
+          <div class="card__head">
+            <span class="card__ico" aria-hidden="true">📋</span>
+            <h3>Паспорт и регламенты</h3>
+          </div>
+          <p>Паспорт проекта, памятка волонтёра, ТБ, технологическая карта и другие материалы.</p>
+          <p><a href="docs.html">Перейти →</a></p>
+        </article>
+        <article class="card">
+          <div class="card__head">
+            <span class="card__ico" aria-hidden="true">📖</span>
+            <h3>Описание проекта</h3>
+          </div>
+          <p>Идеология, технология пултрузии, образовательный потенциал и лицензии — как в основном README репозитория.
+          </p>
+          <p><a href="doc.html?md=README.md&amp;title=Описание%20проекта%20(PET-Мастер)">Читать →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <figure class="page-figure page-figure--banner" style="margin-top: 3rem">
+      <img
+        data-pet-src="files/img/Процесс сборки станка/3 волонтера держат три станка в руках на фоне баннера проекта.webp"
+        alt="Волонтёры с собранными станками на фоне баннера проекта" width="1100" height="400" loading="lazy"
+        decoding="async" />
+      <figcaption>Командная сборка: станки PET-Мастер в руках участников</figcaption>
+    </figure>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <p><strong>PET-Мастер</strong> — открытая документация. Тексты: общественное достояние; STL: CC BY-NC.</p>
+      <p>
+        <a href="https://github.com/gradosphera/pet-master">Репозиторий на GitHub</a>
+        ·
+        <a href="models.html">3D-модели</a>
+        ·
+        <a href="docs.html">Документы</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/pet-paths.js"></script>
+  <script src="js/site-nav.js"></script>
+  <script src="js/theme-toggle.js"></script>
+  <script src="js/repo-links.js"></script>
+</body>
+
+</html>

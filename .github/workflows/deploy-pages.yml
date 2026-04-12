@@ -1,0 +1,49 @@
+# Сборка плоского сайта в корень артефакта (Markdown, models, docs, files рядом с HTML).
+# В настройках репозитория: Settings → Pages → Source → GitHub Actions.
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Сборка каталога сайта
+        run: |
+          set -e
+          mkdir -p _site
+          cp -r website/* _site/
+          shopt -s nullglob
+          for f in *.md; do cp "$f" _site/; done
+          cp List_hardware_PET_Master.csv _site/
+          cp -r models _site/
+          if [ -d files ]; then cp -r files _site/; fi
+          cp -r docs _site/
+          bash scripts/zip-models.sh _site/models.zip
+          touch _site/.nojekyll
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

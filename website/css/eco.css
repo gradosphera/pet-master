@@ -783,7 +783,7 @@ main {
 
 .page-figure--banner img {
   max-height: 340px;
-  object-position: center 30%;
+  object-position: top 100%;
 }
 
 .page-figure figcaption {

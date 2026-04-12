@@ -782,7 +782,7 @@ main {
 }
 
 .page-figure--banner img {
-  max-height: 340px;
+  max-height: 500px;
   object-position: top 100%;
 }
 

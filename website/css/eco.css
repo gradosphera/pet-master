@@ -762,7 +762,7 @@ main {
 .page-figure {
   margin: 0;
   border-radius: var(--radius);
-  overflow: hidden;
+  overflow: clip;
   border: 1px solid var(--eco-soft);
   box-shadow: var(--shadow);
   background: var(--white);

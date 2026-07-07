@@ -30,6 +30,13 @@
     "</svg>" +
     "</button>";
 
+  var navToggle =
+    '<button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">' +
+    '<span class="nav-toggle__bar"></span>' +
+    '<span class="nav-toggle__bar"></span>' +
+    '<span class="nav-toggle__bar"></span>' +
+    "</button>";
+
   var html =
     '<header class="site-header">' +
     '<div class="site-header__inner">' +
@@ -37,7 +44,8 @@
     logoSvg +
     '<span class="logo__wordmark">PET-Мастер</span></a>' +
     '<div class="site-header__tools">' +
-    '<nav class="nav" aria-label="Основное меню">' +
+    navToggle +
+    '<nav class="nav" id="nav" aria-label="Основное меню">' +
     link("index.html", "Главная", ["index.html", /\/website\/?$/]) +
     link("equipment.html", "Комплектующие", ["equipment.html"]) +
     link("models.html", "3D-модели", ["models.html"]) +
@@ -51,4 +59,28 @@
 
   var el = document.getElementById("site-nav");
   if (el) el.outerHTML = html;
+
+  function initNavToggle() {
+    var btn = document.getElementById("nav-toggle");
+    var nav = document.getElementById("nav");
+    if (!btn || !nav) return;
+    btn.addEventListener("click", function () {
+      var open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", open ? "false" : "true");
+      btn.setAttribute("aria-label", open ? "Открыть меню" : "Закрыть меню");
+      nav.classList.toggle("nav--open");
+      btn.classList.toggle("nav-toggle--active");
+    });
+    nav.addEventListener("click", function (e) {
+      if (e.target.tagName === "A" && btn.getAttribute("aria-expanded") === "true") {
+        btn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-label", "Открыть меню");
+        nav.classList.remove("nav--open");
+        btn.classList.remove("nav-toggle--active");
+      }
+    });
+  }
+
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initNavToggle);
+  else initNavToggle();
 })();
